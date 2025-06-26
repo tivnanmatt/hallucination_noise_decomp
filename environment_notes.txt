@@ -1,0 +1,14 @@
+conda create --name hallucination_noise_decomp
+conda activate hallucination_noise_decomp
+conda install python=3.12 pip ffmpeg
+conda install nvidia/label/cuda-12.4.1::cuda-toolkit
+pip3 install numpy scipy matplotlib pandas scikit-learn scikit-image seaborn 
+pip3 install nibabel pydicom
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+pip3 install transformers diffusers accelerate datasets
+pip3 install torch-ema
+
+pip3 install git+https://github.com/Generative-Medical-Imaging-Lab/gmi.git
+
+pip install git+https://github.com/MedMNIST/MedMNIST.git@8cce68f261f993bd0450edc0200498a0691362c2
+
